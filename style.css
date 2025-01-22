@@ -16,7 +16,7 @@ main{
 }
 a{
     text-decoration: none;
-    background-color: chocolate;
+    background-color: none;
     margin-top: 10px;
     width: 80%;
 
@@ -42,16 +42,17 @@ margin-right: auto;
 /*header*/
 
 .header-style{
-    min-height: 300px;
+    min-height: 200px;
     
     background-size: cover;
     text-align: center;
     color: white;
-    background-color: rgb(146, 47, 11);
-    border-radius: 20px;
-    
-    margin-left: 10%;
-    margin-right: 10%;
+    background-color: rgb(149, 77, 46);
+    border-radius: 10px;
+    display: inline-flexbox;
+    justify-content: space-between;
+    margin: 10px;
+
 }
 .menu-bar{
     display: flex;
@@ -63,15 +64,45 @@ margin-right: auto;
 .menu a{
     margin-right: 30px;
     color:white;
+
+}/*we are working on the mobile*/
+@media(max-width:768px){
+    .menu-bar{
+        flex-direction: column;
+    }
+
+    .menu a{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
 }
 /*more about us*/
 .more-about-container{
     display: flex;
     flex-direction: row;
 }
+
 .more-about-item{
     padding: 5px;
     
+}
+
+@media(max-width:768){
+    .more-about-container{
+        flex-direction: column;
+    }
+    .more-about-container img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .more-about-container h3{
+        text-align: center;
+    }
 }
 
 /*houses*/
@@ -146,11 +177,11 @@ legend{
 
 }
 .form-control label{
-width: 25%;
+width: 15%;
 }
 .form-control input,
 .form-control textarea{
-width: 75%;
+width: 85%;
 }
 .contact-footer{
     display: flex;
@@ -176,7 +207,8 @@ footer{
     justify-content: space-between;
     border-radius: 10px;
     height: 100px;
-
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .blue{
     color: green;
@@ -194,4 +226,136 @@ image{
     justify-content: center;
     align-items: center;
     display: flex;
+}
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border-color: 5px solid black;
+    padding: 20px;
+    padding-right: 10px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 768){
+    .about-us{
+        flex-direction: column;
+    }
+
+}
+a:hover{
+    color: orangered;
+}
+
+h2{
+    text-align: center;
+}
+.our-mission{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: rgb(137, 149, 184);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    border-color: rgb(8, 8, 7);
+}
+p{
+    margin: 10px;
+    font-style: italic;
+}
+.history{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(131, 123, 207);
+    margin-top: 40px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.history-pic{
+    text-align: center;
+    margin-left: 200px;
+    
+}
+.Services-and-more{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    border-color: rgb(10, 10, 66);
+    padding: 30px;
+    margin: 20px;
+}
+footer{
+    display: flex;
+    padding: 50px;
+    padding-left: 100px;
+    color: beige;
+}
+footer li{
+    text-align: center;
+}
+a{
+    color:black;
+}
+#body{
+    background-color: #d2bcbc;
+}
+#tips{
+    background-color: rgb(180, 148, 105);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 10px;
+    line-height: 1.5;
+    border: black 1px solid;
+}
+hr{
+    margin-top: 40px;
+}
+.quality{
+    
+    background-color: rgb(230, 219, 219);
+    margin: 30px;
+    padding: 20px;
+    width: 1200px;
+    border-radius: 10px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+}
+.quality p{
+    color: green;
+}
+
+cite{
+    color: black;
+}
+.all{
+    display: flex;
+    justify-content: row;
+    text-align: center;
+}
+.quantity{
+    color: rgb(111, 39, 13);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    display: block;
+    text-align: center;
+    background-color: azure;
+}
+form{
+    margin-bottom: 30px;
+    padding: 5px;
+    border: black 1px solid;
 }
